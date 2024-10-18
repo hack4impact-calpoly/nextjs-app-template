@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "next lint --fix"
+    "lint:fix": "next lint --fix",
+    "format": "prettier --write .",
+    "test": "echo 'Install jest (or another unit test suite) to use this command.'",
+    "prepare": "husky"
   },
   "dependencies": {
     "mongoose": "^7.6.3",
@@ -22,6 +25,10 @@
     "eslint": "^8",
     "eslint-config-next": "14.0.0",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0",
+    "prettier": "^3.0.0",
     "typescript": "^5"
   }
 }
