@@ -17,19 +17,24 @@ jobs:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
+    # Use matrix strategy to test multiple Node.js versions
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x, 22.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
         with:
-          node-version: "18.x"
+          node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
         run: npm install
-
-      - name: Run tests
-        run: npm test
 
       - name: Dry-run build
         run: npm run build
@@ -38,3 +43,6 @@ jobs:
           # - Settings -> Secrets and variables -> New repository secret
           MONGO_URI: ${{ secrets.MONGO_URI }}
           # Add additional environment variables here
+      
+      - name: Run tests
+        run: npm test
