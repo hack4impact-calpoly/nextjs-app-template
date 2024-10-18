@@ -11,6 +11,8 @@ This template uses Next.js version 14.0.0. The following lists what is configure
 7.  Template documentation to fill in
 8.  Two branches called `develop` and `main` (if you selected copy branches when creating from template)
 9.  Issue and Pull Request templates. Modify them in the `.github` folder
-10.  Some common GitHub tags
+10. Some common GitHub tags
+11. Pre-commit linting hook with Husky and lint-staged
+12. Continuous integration with GitHub Actions
 
-Last updated 11/13/23
+Last updated 10/17/2024
