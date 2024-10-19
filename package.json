@@ -7,11 +7,14 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "lint:fix": "next lint --fix"
+    "lint:fix": "next lint --fix",
+    "format": "prettier --write .",
+    "test": "echo 'Install jest (or another unit test suite) to use this command.'",
+    "prepare": "husky"
   },
   "dependencies": {
-    "mongoose": "^7.6.3",
-    "next": "14.0.0",
+    "mongoose": "^8",
+    "next": "^14",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -20,8 +23,12 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.0.0",
-    "eslint-config-prettier": "^9.0.0",
+    "eslint-config-next": "^14",
+    "eslint-config-prettier": "^9",
+    "eslint-plugin-prettier": "^5",
+    "husky": "^9",
+    "lint-staged": "^15",
+    "prettier": "^3",
     "typescript": "^5"
   }
 }
