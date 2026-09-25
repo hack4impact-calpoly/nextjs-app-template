@@ -1,32 +1,58 @@
-# name of non-profit
+# VolunteerFinder
 
-{One sentence description of the project}
+VolunteerFinder is a web app for finding local and remote volunteer opportunities. Users can browse listings and filter them by category, location, and whether they can be done remotely. Each listing shows the organization, date, time commitment, and how many spots are left. It's built with Next.js (App Router) and TypeScript, and the data lives in MongoDB.
 
-## Table of Contents
+## Getting Started
 
-- [Overview](#overview)
-  - [Purpose](#purpose)
-  - [Team](#team)
-- [Getting Started And Contributing](#getting-started-and-contributing)
+### Prerequisites
 
-## Overview
+- Node.js 20 or newer
+- A MongoDB connection string (ask the TL, don't create your own cluster)
 
-### Purpose
+### Install and run
 
-{Short paragraph description of the non-profit mission and the purpose of this project. Who will this project help, why is it necessary. Impact of the project.}
+```bash
+git clone https://github.com/shreev2703/Team2-app.git
+cd Team2-app
+npm install
+cp .env.local.example .env.local   # then fill in MONGODB_URI
+npm run dev
+```
 
-### Team
+The app runs at http://localhost:3000.
 
-The {non-profit name} team consists of {#} Cal Poly students. Over the course of about 9 months, we worked as a team to deploy this web application. The team members are listed below:
+### Environment variables
 
-- [First Last](https://www.linkedin.com/) - Project Manager
-- [First Last](https://www.linkedin.com/) - Designer
-- [First Last](https://www.linkedin.com/) - Tech Lead
-- [First Last](https://www.linkedin.com/) - Tech Lead
-- [First Last](https://www.linkedin.com/) - Software Developer
+| Variable      | Description                               | Where to get it |
+| ------------- | ----------------------------------------- | --------------- |
+| `MONGODB_URI` | Connection string for the MongoDB cluster | Ask the TL      |
 
-## Getting Started And Contributing
+`.env.local` is gitignored. Never commit it, and never paste the connection string into an issue, PR, or the team channel.
 
-Visit [getting-started.md](docs/getting-started.md) on info for how to set up this repo.
+### Seeding the database
 
-Visit [contributing.md](docs/contributing.md) on info for how to contribute to this repo.
+To check your connection and load the mock data into the `volunteerfinder` database, run:
+
+```bash
+npx tsx scripts/seed.ts
+```
+
+This **clears** the `opportunities` collection and re-inserts everything from `src/data/mockOpportunities.ts`. If it prints `inserted N opportunities`, your connection works.
+
+## Folder Structure
+
+```
+src/
+  app/                 Pages and API routes (Next.js App Router)
+    api/opportunities/ Opportunities API (GET with filters, POST), see issues #9 and #10
+  components/          Shared React components
+  types/               TypeScript types (VolunteerOpportunity)
+  data/                Mock data used by the frontend until we hook up the API
+  lib/                 Server helpers, e.g. the shared MongoDB client
+scripts/               One-off scripts like seed.ts
+docs/                  Setup and contributing guides
+```
+
+## Contributing
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md) for branch naming, commit format, and the PR process. There's more setup detail in [docs/getting-started.md](docs/getting-started.md).
