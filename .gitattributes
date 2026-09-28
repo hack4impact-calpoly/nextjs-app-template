@@ -1,0 +1,4 @@
+# Keep LF line endings on every OS so Prettier/ESLint pass on Windows too
+* text=auto eol=lf
+*.png binary
+*.ico binary
