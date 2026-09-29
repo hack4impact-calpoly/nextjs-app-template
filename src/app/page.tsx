@@ -1,10 +1,14 @@
-import Navbar from "@/components/Navbar";
+import MovieCatalog from "@/components/MovieCatalog";
+import styles from "@/styles/movies.module.css";
 
 export default function Home() {
   return (
-    <main>
-      <Navbar />
-      <h1>Home</h1>
+    <main className={styles.page}>
+      <header className={styles.simpleHeader}>
+        <h1>MOVIES</h1>
+      </header>
+
+      <MovieCatalog />
     </main>
   );
 }
