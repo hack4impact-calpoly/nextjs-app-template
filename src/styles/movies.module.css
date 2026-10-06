@@ -1,0 +1,395 @@
+.page {
+  min-height: 100vh;
+  color: #f8f5ed;
+  background: #0a0a0b;
+}
+
+.simpleHeader {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 72px clamp(24px, 7vw, 112px) 10px;
+}
+
+.simpleHeader h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.5rem, 9vw, 8rem);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 0.9;
+}
+
+.catalog {
+  padding: 42px clamp(24px, 7vw, 112px) 120px;
+}
+
+.movieGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 30px 22px;
+  max-width: 1360px;
+  margin: 0 auto;
+}
+
+.card {
+  height: 100%;
+  min-width: 0;
+}
+
+.cardButton {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+  flex-direction: column;
+  color: inherit;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+  background: #141416;
+  border: 1px solid #27272a;
+  border-radius: 18px;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.cardButton:hover,
+.cardButton:focus-visible {
+  border-color: #8e6938;
+  outline: none;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+  transform: translateY(-5px);
+}
+
+.poster {
+  position: relative;
+  display: flex;
+  min-height: 330px;
+  padding: 24px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.poster::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(180deg, transparent 30%, rgba(0, 0, 0, 0.65));
+}
+
+.posterLabel {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(4rem, 8vw, 8rem);
+  line-height: 1;
+  opacity: 0.55;
+}
+
+.posterTitle {
+  z-index: 1;
+  max-width: 280px;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.7rem, 3vw, 2.7rem);
+  line-height: 0.95;
+}
+
+.cardBody {
+  display: flex;
+  padding: 22px;
+  flex: 1;
+  flex-direction: column;
+}
+
+.cardHeadingRow {
+  display: flex;
+  gap: 14px;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+  line-height: 1.15;
+}
+
+.rating {
+  display: inline-flex;
+  padding: 3px 7px;
+  color: #bbb3a7;
+  font-size: 0.66rem;
+  font-weight: 750;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+  border: 1px solid #4a4742;
+  border-radius: 4px;
+}
+
+.cardMeta {
+  margin-top: 7px;
+  color: #8f8a82;
+  font-size: 0.84rem;
+}
+
+.cardDirector {
+  margin-top: 9px;
+  color: #c4a26d;
+  font-size: 0.86rem;
+}
+
+.cardDescription {
+  margin-top: 17px;
+  color: #cfc8bc;
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+.cardCast {
+  margin-top: 14px;
+  color: #8f8a82;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.cardCast strong {
+  color: #d8d1c6;
+}
+
+.showtimes {
+  display: flex;
+  gap: 7px;
+  margin-top: auto;
+  padding-top: 18px;
+  flex-wrap: wrap;
+}
+
+.showtime {
+  padding: 7px 9px;
+  color: #cfc8bc;
+  font-size: 0.72rem;
+  background: #202023;
+  border-radius: 6px;
+}
+
+.detailPage {
+  min-height: 100vh;
+  padding: 48px clamp(24px, 7vw, 112px) 90px;
+  color: #f8f5ed;
+  background: radial-gradient(circle at 80% 5%, rgba(135, 92, 50, 0.16), transparent 34%), #0a0a0b;
+}
+
+.backLink {
+  display: inline-flex;
+  margin: 0 auto 46px;
+  color: #b5ada1;
+  font-size: 0.88rem;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  color: #e7b769;
+}
+
+.detailLayout {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.85fr) minmax(420px, 1.15fr);
+  gap: clamp(42px, 7vw, 100px);
+  align-items: center;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.detailPoster {
+  position: relative;
+  display: flex;
+  min-height: 650px;
+  padding: 34px;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 22px;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.42);
+}
+
+.detailPoster::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  background: linear-gradient(180deg, transparent 25%, rgba(0, 0, 0, 0.72));
+}
+
+.detailPoster span {
+  color: rgba(255, 255, 255, 0.55);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(6rem, 13vw, 12rem);
+  line-height: 0.8;
+}
+
+.detailPoster strong {
+  z-index: 1;
+  max-width: 390px;
+  color: white;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.5rem, 5vw, 4.6rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+  line-height: 0.94;
+}
+
+.detailContent {
+  max-width: 660px;
+}
+
+.detailEyebrow {
+  margin: 0 0 16px;
+  color: #e7b769;
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.detailTitleRow {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+}
+
+.detailTitleRow h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 0.92;
+}
+
+.detailMeta {
+  margin: 22px 0 0;
+  color: #908a81;
+  font-size: 0.9rem;
+}
+
+.movieFacts {
+  display: grid;
+  gap: 18px;
+  margin: 38px 0 0;
+}
+
+.movieFacts div {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 18px;
+}
+
+.movieFacts dt {
+  color: #777168;
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.movieFacts dd {
+  margin: 0;
+  color: #d8d1c6;
+  line-height: 1.5;
+}
+
+.detailDescription {
+  max-width: 610px;
+  margin: 36px 0 0;
+  color: #c7c0b4;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.showtimeSection {
+  margin-top: 44px;
+  padding-top: 30px;
+  border-top: 1px solid #292725;
+}
+
+.showtimeSection h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.55rem;
+  font-weight: 500;
+}
+
+.detailShowtimeList {
+  display: flex;
+  gap: 10px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.detailShowtime {
+  display: inline-flex;
+  padding: 12px 15px;
+  color: #17110a;
+  font-size: 0.84rem;
+  font-weight: 750;
+  text-decoration: none;
+  background: #e7b769;
+  border-radius: 9px;
+  transition:
+    background 160ms ease,
+    transform 160ms ease;
+}
+
+.detailShowtime:hover {
+  background: #f4cb85;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .movieGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .detailLayout {
+    grid-template-columns: minmax(240px, 0.8fr) minmax(360px, 1.2fr);
+    gap: 36px;
+  }
+}
+
+@media (max-width: 640px) {
+  .simpleHeader {
+    padding-top: 50px;
+  }
+
+  .movieGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .poster {
+    min-height: 390px;
+  }
+
+  .detailPage {
+    padding-top: 26px;
+  }
+
+  .detailLayout {
+    grid-template-columns: 1fr;
+  }
+
+  .detailPoster {
+    min-height: 480px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cardButton,
+  .detailShowtime {
+    transition: none;
+  }
+}

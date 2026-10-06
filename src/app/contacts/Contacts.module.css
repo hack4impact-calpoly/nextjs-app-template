@@ -1,0 +1,132 @@
+.page {
+  min-height: calc(100vh - 4.5rem);
+  padding: 4rem 1.5rem 5rem;
+  background: #f8f8f8;
+}
+
+.intro {
+  max-width: 42rem;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: #9c0707;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.intro h1 {
+  margin: 0;
+  color: #1a1a1a;
+  font-size: clamp(2.25rem, 5vw, 3.5rem);
+  line-height: 1.1;
+}
+
+.description {
+  margin: 1rem auto 0;
+  color: #666666;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.fieldGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field label {
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  color: #1a1a1a;
+  font: inherit;
+  background: #ffffff;
+  border: 1px solid #d4d4d4;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.field textarea {
+  min-height: 9rem;
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: #9c0707;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(156, 7, 7, 0.14);
+}
+
+.submitButton {
+  align-self: flex-start;
+  padding: 0.8rem 1.25rem;
+  color: #ffffff;
+  font: inherit;
+  font-weight: 700;
+  background: #9c0707;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.submitButton:hover {
+  background: #760505;
+}
+
+.submitButton:focus-visible {
+  outline: 3px solid rgba(156, 7, 7, 0.35);
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 3rem 1rem 4rem;
+  }
+
+  .form {
+    padding: 1.25rem;
+  }
+
+  .fieldGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+}

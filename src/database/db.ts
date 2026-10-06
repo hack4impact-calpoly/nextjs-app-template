@@ -1,7 +1,9 @@
 import mongoose from "mongoose";
 
-const url: string = process.env.MONGO_URI as string;
-let connection: typeof mongoose;
+// Share an in-flight connection across requests and development hot reloads.
+const globalForMongo = globalThis as typeof globalThis & {
+  mongoConnection?: Promise<typeof mongoose>;
+};
 
 /**
  * Makes a connection to a MongoDB database. If a connection already exists, does nothing
@@ -9,12 +11,20 @@ let connection: typeof mongoose;
  * @returns {Promise<typeof mongoose>}
  */
 const connectDB = async () => {
-  if (!connection) {
-    // uncomment this line once you have the MONGO_URI set up
-    // connection = await mongoose.connect(url);
-    connection = "remove me" as any; // remove me
-    return connection;
+  const url = process.env.MONGO_URI;
+  if (!url) {
+    throw new Error("MONGO_URI is not configured");
   }
+
+  if (!globalForMongo.mongoConnection) {
+    globalForMongo.mongoConnection = mongoose.connect(url, { serverSelectionTimeoutMS: 5000 }).catch((error) => {
+      // A failed attempt must not prevent a later request from reconnecting.
+      globalForMongo.mongoConnection = undefined;
+      throw error;
+    });
+  }
+
+  return globalForMongo.mongoConnection;
 };
 
 export default connectDB;
