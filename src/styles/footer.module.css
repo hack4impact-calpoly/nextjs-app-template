@@ -1,0 +1,39 @@
+.footer {
+  background: var(--espresso);
+  color: var(--cream);
+}
+.inner {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+}
+.brand {
+  font-weight: 700;
+  color: var(--cream);
+  text-decoration: none;
+}
+.inner nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+.inner nav a {
+  color: var(--cream);
+  text-underline-offset: 0.25rem;
+}
+.inner a:focus-visible {
+  outline-color: var(--cream);
+}
+.disclosure {
+  grid-column: 1 / -1;
+  margin: 0;
+  font-size: 0.8rem;
+}
+@media (max-width: 760px) {
+  .inner {
+    grid-template-columns: 1fr;
+  }
+}

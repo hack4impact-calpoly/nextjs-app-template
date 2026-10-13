@@ -1,0 +1,106 @@
+[
+  {
+    "route": "/manage-offerings",
+    "viewport": {
+      "width": 1280,
+      "height": 900
+    },
+    "focus": [
+      {
+        "id": "_R_2n5esnelb_",
+        "tag": "INPUT",
+        "text": "",
+        "outline": "3px"
+      },
+      {
+        "id": "offering-name",
+        "tag": "INPUT",
+        "text": "",
+        "outline": "3px"
+      },
+      {
+        "id": "offering-description",
+        "tag": "TEXTAREA",
+        "text": "",
+        "outline": "3px"
+      },
+      {
+        "id": "offering-price",
+        "tag": "INPUT",
+        "text": "",
+        "outline": "3px"
+      },
+      {
+        "id": "offering-category",
+        "tag": "SELECT",
+        "text": "CoffeeTeaSmoothie",
+        "outline": "3px"
+      },
+      {
+        "id": "",
+        "tag": "BUTTON",
+        "text": "Save offering",
+        "outline": "3px"
+      }
+    ],
+    "writes": 1,
+    "overflow": {
+      "scroll": 1280,
+      "width": 1280
+    },
+    "result": "invalid write blocked; only corrected error cleared; all fields and checkbox reset; keyboard-only passed",
+    "screenshots": ["pr38-desktop-invalid.jpg", "pr38-desktop-reset.jpg"]
+  },
+  {
+    "route": "/manage-offerings",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "focus": [
+      {
+        "id": "_R_2n5esnelb_",
+        "tag": "INPUT",
+        "text": "",
+        "outline": "3px"
+      },
+      {
+        "id": "offering-name",
+        "tag": "INPUT",
+        "text": "",
+        "outline": "3px"
+      },
+      {
+        "id": "offering-description",
+        "tag": "TEXTAREA",
+        "text": "",
+        "outline": "3px"
+      },
+      {
+        "id": "offering-price",
+        "tag": "INPUT",
+        "text": "",
+        "outline": "3px"
+      },
+      {
+        "id": "offering-category",
+        "tag": "SELECT",
+        "text": "CoffeeTeaSmoothie",
+        "outline": "3px"
+      },
+      {
+        "id": "",
+        "tag": "BUTTON",
+        "text": "Save offering",
+        "outline": "3px"
+      }
+    ],
+    "writes": 1,
+    "overflow": {
+      "scroll": 390,
+      "width": 390
+    },
+    "result": "invalid write blocked; only corrected error cleared; all fields and checkbox reset; keyboard-only passed",
+    "screenshots": ["pr38-mobile-invalid.jpg", "pr38-mobile-reset.jpg"]
+  }
+]

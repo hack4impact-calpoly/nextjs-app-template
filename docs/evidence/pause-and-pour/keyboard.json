@@ -1,0 +1,25 @@
+[
+  {
+    "action": "First Tab",
+    "label": "Pause & Pour",
+    "outline": "solid",
+    "outlineWidth": "3px"
+  },
+  {
+    "action": "Tab from primary action",
+    "label": "See current specials",
+    "outline": "solid"
+  },
+  {
+    "action": "Enter on Specials action",
+    "url": "http://localhost:3001/specials"
+  },
+  {
+    "action": "Enter on Menu action",
+    "url": "http://localhost:3001/menu"
+  },
+  {
+    "action": "Enter on footer Contact",
+    "url": "http://localhost:3001/contact"
+  }
+]

@@ -2,27 +2,37 @@
 
 Closes #{ISSUE NUMBER HERE}
 
+<!-- `Closes #n` links and auto-closes the issue only when this pull request targets `main`. One issue per pull request. -->
+
 ### Pull Request Summary
 
-{Describe the purpose of your pull request}
+{What this change does, in a sentence a classmate can review}
 
 ### Modifications
 
-{list out the files created/modified and a brief description of what was changed}
+For each file, name the file, the URL it serves (if any), and the mechanism: page, layout, component, CSS Module, or `connectDB`.
+
+- `{path}` — `{URL or none}` — `{mechanism}`: {what changed}
 
 ### Testing Considerations
 
-{list out what you have tested and what the reviewer should verify}
+{What you tried in the browser or with a command, and what the reviewer should verify}
+
+If the `test` script in `package.json` is still a placeholder, say that here. Add a test runner when the issue asks for tests.
+
+### Briefly State What You Learned
+
+{What programming languages, interpersonal skills, or something else you learned or improved from this pull request}
 
 ### Pull Request Checklist
 
 - [ ] Code is neat, readable, and works
 - [ ] Comments are appropriate
-- [ ] The commit messages follows our [guidelines](https://h4i.notion.site/Conventional-Commits-593452ad1179489399ad3bd696ef772a)
+- [ ] Commit messages follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) (`type(scope): description`). Course notes: [Hack4Impact guide](https://h4i.notion.site/Conventional-Commits-593452ad1179489399ad3bd696ef772a). That spec shapes commit messages, not this pull request body.
 - [ ] The developer name is specified
 - [ ] The summary is completed
-- [ ] Assign reviewers
+- [ ] Reviewers are @mentioned
 
 ### Screenshots/Screencast
 
-{put screenshots of your change, or even better a screencast displaying the functionality}
+{Screenshot or short recording when the change is visible in the browser}

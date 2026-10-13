@@ -1,0 +1,6 @@
+interface:
+  display_name: "Claude Handoff"
+  short_description: "Explicitly invoke the Claude Handoff workflow"
+  default_prompt: "Use $claude-handoff to guide this task."
+policy:
+  allow_implicit_invocation: false

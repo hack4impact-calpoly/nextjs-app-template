@@ -1,0 +1,14 @@
+{
+  "date": "2026-10-13",
+  "deployedCommit": "1aaec6dfe08149578b8fdc42e685029333e3cfa8",
+  "deploymentUrl": "https://vercel.com/brianlidesign/coffee-shop/4B3zBNxrn3B7ZVvHdAZV3z9NjJZM",
+  "publicUrl": "https://coffee-shop-sigma-rouge.vercel.app",
+  "httpStatus": 200,
+  "offerings": 16,
+  "specials": 3,
+  "uniqueIds": 16,
+  "localAndProductionIdsMatch": true,
+  "verificationMode": "read-only",
+  "networkRule": "0.0.0.0/0 approved by Brian for this student project",
+  "liveWritesVerified": false
+}

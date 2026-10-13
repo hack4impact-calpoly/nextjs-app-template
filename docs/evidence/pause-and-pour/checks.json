@@ -1,0 +1,167 @@
+[
+  {
+    "path": "/",
+    "width": 1280,
+    "height": 900,
+    "actualHeight": 900,
+    "font": "Arial, Helvetica, sans-serif",
+    "footer": true,
+    "scroll": 1280,
+    "uppercaseElements": 0,
+    "viewport": 1280
+  },
+  {
+    "path": "/about",
+    "width": 1280,
+    "height": 900,
+    "actualHeight": 900,
+    "font": "Arial, Helvetica, sans-serif",
+    "footer": true,
+    "scroll": 1280,
+    "uppercaseElements": 0,
+    "viewport": 1280
+  },
+  {
+    "path": "/contact",
+    "width": 1280,
+    "height": 900,
+    "actualHeight": 900,
+    "font": "Arial, Helvetica, sans-serif",
+    "footer": true,
+    "scroll": 1280,
+    "uppercaseElements": 0,
+    "viewport": 1280
+  },
+  {
+    "path": "/menu",
+    "width": 1280,
+    "height": 900,
+    "actualHeight": 900,
+    "font": "Arial, Helvetica, sans-serif",
+    "footer": true,
+    "scroll": 1280,
+    "uppercaseElements": 0,
+    "viewport": 1280
+  },
+  {
+    "path": "/specials",
+    "width": 1280,
+    "height": 900,
+    "actualHeight": 900,
+    "font": "Arial, Helvetica, sans-serif",
+    "footer": true,
+    "scroll": 1280,
+    "uppercaseElements": 0,
+    "viewport": 1280
+  },
+  {
+    "path": "/",
+    "width": 390,
+    "height": 844,
+    "actualHeight": 844,
+    "font": "Arial, Helvetica, sans-serif",
+    "footer": true,
+    "scroll": 390,
+    "uppercaseElements": 0,
+    "viewport": 390
+  },
+  {
+    "path": "/about",
+    "width": 390,
+    "height": 844,
+    "actualHeight": 844,
+    "font": "Arial, Helvetica, sans-serif",
+    "footer": true,
+    "scroll": 390,
+    "uppercaseElements": 0,
+    "viewport": 390
+  },
+  {
+    "path": "/contact",
+    "width": 390,
+    "height": 844,
+    "actualHeight": 844,
+    "font": "Arial, Helvetica, sans-serif",
+    "footer": true,
+    "scroll": 390,
+    "uppercaseElements": 0,
+    "viewport": 390
+  },
+  {
+    "path": "/menu",
+    "width": 390,
+    "height": 844,
+    "actualHeight": 844,
+    "font": "Arial, Helvetica, sans-serif",
+    "footer": true,
+    "scroll": 390,
+    "uppercaseElements": 0,
+    "viewport": 390
+  },
+  {
+    "path": "/specials",
+    "width": 390,
+    "height": 844,
+    "actualHeight": 844,
+    "font": "Arial, Helvetica, sans-serif",
+    "footer": true,
+    "scroll": 390,
+    "uppercaseElements": 0,
+    "viewport": 390
+  },
+  {
+    "path": "/",
+    "width": 320,
+    "height": 780,
+    "actualHeight": 780,
+    "font": "Arial, Helvetica, sans-serif",
+    "footer": true,
+    "scroll": 305,
+    "uppercaseElements": 0,
+    "viewport": 305
+  },
+  {
+    "path": "/about",
+    "width": 320,
+    "height": 780,
+    "actualHeight": 780,
+    "font": "Arial, Helvetica, sans-serif",
+    "footer": true,
+    "scroll": 305,
+    "uppercaseElements": 0,
+    "viewport": 305
+  },
+  {
+    "path": "/contact",
+    "width": 320,
+    "height": 780,
+    "actualHeight": 780,
+    "font": "Arial, Helvetica, sans-serif",
+    "footer": true,
+    "scroll": 305,
+    "uppercaseElements": 0,
+    "viewport": 305
+  },
+  {
+    "path": "/menu",
+    "width": 320,
+    "height": 780,
+    "actualHeight": 780,
+    "font": "Arial, Helvetica, sans-serif",
+    "footer": true,
+    "scroll": 320,
+    "uppercaseElements": 0,
+    "viewport": 320
+  },
+  {
+    "path": "/specials",
+    "width": 320,
+    "height": 780,
+    "actualHeight": 780,
+    "font": "Arial, Helvetica, sans-serif",
+    "footer": true,
+    "scroll": 320,
+    "uppercaseElements": 0,
+    "viewport": 320
+  }
+]

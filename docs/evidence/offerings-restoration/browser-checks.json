@@ -1,0 +1,108 @@
+[
+  {
+    "route": "menu",
+    "width": 1280,
+    "height": 900,
+    "alerts": 0,
+    "items": 16,
+    "names": [
+      "Cafe au Lait",
+      "Cappuccino",
+      "Chai Latte",
+      "Chamomile Tea",
+      "Cortado",
+      "English Breakfast Tea",
+      "Espresso",
+      "Fruit Smoothie",
+      "Golden Hour Cold Brew",
+      "Hojicha Latte",
+      "Iced Hibiscus Berry",
+      "Latte",
+      "London Fog",
+      "Matcha",
+      "Mocha",
+      "Pumpkin Spice Latte"
+    ],
+    "scroll": 1265,
+    "viewport": 1265
+  },
+  {
+    "route": "menu",
+    "width": 1280,
+    "height": 900,
+    "afterRefresh": true,
+    "alerts": 0,
+    "items": 16
+  },
+  {
+    "route": "specials",
+    "width": 1280,
+    "height": 900,
+    "alerts": 0,
+    "items": 3,
+    "names": ["Golden Hour Cold Brew", "Hojicha Latte", "Pumpkin Spice Latte"],
+    "scroll": 1280,
+    "viewport": 1280
+  },
+  {
+    "route": "specials",
+    "width": 1280,
+    "height": 900,
+    "afterRefresh": true,
+    "alerts": 0,
+    "items": 3
+  },
+  {
+    "route": "menu",
+    "width": 390,
+    "height": 844,
+    "alerts": 0,
+    "items": 16,
+    "names": [
+      "Cafe au Lait",
+      "Cappuccino",
+      "Chai Latte",
+      "Chamomile Tea",
+      "Cortado",
+      "English Breakfast Tea",
+      "Espresso",
+      "Fruit Smoothie",
+      "Golden Hour Cold Brew",
+      "Hojicha Latte",
+      "Iced Hibiscus Berry",
+      "Latte",
+      "London Fog",
+      "Matcha",
+      "Mocha",
+      "Pumpkin Spice Latte"
+    ],
+    "scroll": 375,
+    "viewport": 375
+  },
+  {
+    "route": "menu",
+    "width": 390,
+    "height": 844,
+    "afterRefresh": true,
+    "alerts": 0,
+    "items": 16
+  },
+  {
+    "route": "specials",
+    "width": 390,
+    "height": 844,
+    "alerts": 0,
+    "items": 3,
+    "names": ["Golden Hour Cold Brew", "Hojicha Latte", "Pumpkin Spice Latte"],
+    "scroll": 375,
+    "viewport": 375
+  },
+  {
+    "route": "specials",
+    "width": 390,
+    "height": 844,
+    "afterRefresh": true,
+    "alerts": 0,
+    "items": 3
+  }
+]

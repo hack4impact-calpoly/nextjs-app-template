@@ -1,30 +1,59 @@
 # Contributing
 
-Here are all of the steps you should follow whenever contributing to this repo!
+Every change lands on its own branch and pull request. Do not commit directly to `main`.
 
-## Making Changes
+## Making changes
 
-1. Before you start making changes, always make sure you're on the main branch, then `git pull` and `npm i` to make sure your code is up to date
-2. Create a branch `git checkout -b <name-of-branch>`
-3. Make changes to the code
-4. `npm run lint` to ensure code standards. (running `npm run lint:fix` will fix most of the styling errors)
+1. Start from an up-to-date `main` branch:
 
-## Commiting Changes
+   ```bash
+   git checkout main
+   git pull origin main
+   npm ci
+   ```
 
-When interacting with Git/GitHub, feel free to use the command line, VSCode extension, or Github desktop. These steps assume you have already made a branch using `git checkout -b <branch-name>` and you have made all neccessary code changes for the provided task.
+2. Open the GitHub issue assigned to you. Use **Create a branch for this issue** when GitHub offers it. Otherwise create the branch locally:
 
-1. View diffs of each file you changed using the VSCode Github extension (3rd icon on far left bar of VSCode) or GitHub Desktop
-2. `git add .` (to stage all files) or `git add <file-name>` (to stage specific file)
-3. `git commit -m "<type>[optional scope]: <description>"` or
-   `git commit -m "<type>[optional scope]: <description>" -m "[optional body]"` or
-   `git commit` to get a message prompt
-4. `git push -u origin <name-of-branch>`
+   ```bash
+   git checkout -b <short-issue-name>
+   ```
 
-## Making Pull Requests
+3. Change only what that issue asks for.
+4. Run `npm run lint`. Use `npm run lint:fix` when you want the tools to apply safe fixes. Some ESLint findings still need a manual edit.
 
-1. Go to the Pull Requests tab on [github.com](https://github.com/)
-2. Find your PR, fill out the PR template
-3. (If applicable, provide a screenshot of your work in the comment area)
-4. Link your PR to the corresponding **Issue**
-5. Request a reviewer to check your code
-6. Once approved, your code is ready to be merged in 🎉
+## Committing
+
+Use the command line, the VS Code or Cursor source control view, or GitHub Desktop. These steps assume you are already on your issue branch and the code change is done.
+
+1. Review the diff of each file you changed.
+2. Stage files with `git add <file>` or `git add .` for everything in this change.
+3. Commit with a [Conventional Commit](https://h4i.notion.site/Conventional-Commits-593452ad1179489399ad3bd696ef772a) message:
+
+   ```bash
+   git commit -m "<type>[optional scope]: <description>"
+   ```
+
+   Add a body when the reason is not obvious from the subject:
+
+   ```bash
+   git commit -m "<type>[optional scope]: <description>" -m "<why this change>"
+   ```
+
+4. Push the branch:
+
+   ```bash
+   git push -u origin <short-issue-name>
+   ```
+
+A pre-commit hook runs lint-staged. It formats staged files and runs ESLint on JavaScript and TypeScript. If the hook fails, fix the reported files and commit again.
+
+## Pull requests
+
+1. Open a pull request from your issue branch into `main`.
+2. Fill out the pull request template: your name, a summary, the files you changed, and what you tested.
+3. Link the issue in the description, for example `Closes #123`.
+4. Add a screenshot or short recording when the change is visible in the browser.
+5. Request a reviewer.
+6. Merge after the review is approved.
+
+If you get stuck, push the branch as it is and ask for help on the issue or pull request.

@@ -1,0 +1,409 @@
+{
+  "baseCommit": "34a98d8",
+  "harness": "Real Next.js pages in Edge; API requests intercepted with controlled fixtures; agent-performed checks",
+  "results": [
+    {
+      "route": "/",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "overflow": {
+        "scroll": 1280,
+        "width": 1280
+      },
+      "keyboardFocus": {
+        "label": "Home",
+        "tag": "A",
+        "outlineStyle": "auto",
+        "outlineWidth": "1px",
+        "decoration": "underline"
+      },
+      "screenshot": "pr39-desktop-home.jpg"
+    },
+    {
+      "route": "/about",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "overflow": {
+        "scroll": 1280,
+        "width": 1280
+      },
+      "keyboardFocus": {
+        "label": "Home",
+        "tag": "A",
+        "outlineStyle": "auto",
+        "outlineWidth": "1px",
+        "decoration": "underline"
+      },
+      "screenshot": "pr39-desktop-about.jpg"
+    },
+    {
+      "route": "/contact",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "overflow": {
+        "scroll": 1280,
+        "width": 1280
+      },
+      "keyboardFocus": {
+        "label": "Home",
+        "tag": "A",
+        "outlineStyle": "auto",
+        "outlineWidth": "1px",
+        "decoration": "underline"
+      },
+      "screenshot": "pr39-desktop-contact.jpg"
+    },
+    {
+      "route": "/menu",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "overflow": {
+        "scroll": 1280,
+        "width": 1280
+      },
+      "keyboardFocus": {
+        "label": "Home",
+        "tag": "A",
+        "outlineStyle": "auto",
+        "outlineWidth": "1px",
+        "decoration": "underline"
+      },
+      "screenshot": "pr39-desktop-menu.jpg"
+    },
+    {
+      "route": "/specials",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "overflow": {
+        "scroll": 1280,
+        "width": 1280
+      },
+      "keyboardFocus": {
+        "label": "Home",
+        "tag": "A",
+        "outlineStyle": "auto",
+        "outlineWidth": "1px",
+        "decoration": "underline"
+      },
+      "screenshot": "pr39-desktop-specials.jpg"
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "keyboardNavigation": "Home → About → Menu → Specials → Contact passed"
+    },
+    {
+      "route": "/specials",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "state": "none-special",
+      "expected": "No specials are available right now.",
+      "screenshot": "pr39-desktop-none-special.jpg"
+    },
+    {
+      "route": "/menu",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "state": "network",
+      "expected": "Unable to load menu.",
+      "screenshot": "pr39-desktop-network.jpg",
+      "retry": "keyboard retry recovered"
+    },
+    {
+      "route": "/menu",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "state": "unreadable",
+      "expected": "Unable to load menu.",
+      "screenshot": "pr39-desktop-unreadable.jpg",
+      "retry": "keyboard retry recovered"
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": {
+        "scroll": 390,
+        "width": 390
+      },
+      "keyboardFocus": {
+        "label": "Home",
+        "tag": "A",
+        "outlineStyle": "auto",
+        "outlineWidth": "1px",
+        "decoration": "underline"
+      },
+      "screenshot": "pr39-mobile-home.jpg"
+    },
+    {
+      "route": "/about",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": {
+        "scroll": 390,
+        "width": 390
+      },
+      "keyboardFocus": {
+        "label": "Home",
+        "tag": "A",
+        "outlineStyle": "auto",
+        "outlineWidth": "1px",
+        "decoration": "underline"
+      },
+      "screenshot": "pr39-mobile-about.jpg"
+    },
+    {
+      "route": "/contact",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": {
+        "scroll": 390,
+        "width": 390
+      },
+      "keyboardFocus": {
+        "label": "Home",
+        "tag": "A",
+        "outlineStyle": "auto",
+        "outlineWidth": "1px",
+        "decoration": "underline"
+      },
+      "screenshot": "pr39-mobile-contact.jpg"
+    },
+    {
+      "route": "/menu",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": {
+        "scroll": 390,
+        "width": 390
+      },
+      "keyboardFocus": {
+        "label": "Home",
+        "tag": "A",
+        "outlineStyle": "auto",
+        "outlineWidth": "1px",
+        "decoration": "underline"
+      },
+      "screenshot": "pr39-mobile-menu.jpg"
+    },
+    {
+      "route": "/specials",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "overflow": {
+        "scroll": 390,
+        "width": 390
+      },
+      "keyboardFocus": {
+        "label": "Home",
+        "tag": "A",
+        "outlineStyle": "auto",
+        "outlineWidth": "1px",
+        "decoration": "underline"
+      },
+      "screenshot": "pr39-mobile-specials.jpg"
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "keyboardNavigation": "Home → About → Menu → Specials → Contact passed"
+    },
+    {
+      "route": "/specials",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "none-special",
+      "expected": "No specials are available right now.",
+      "screenshot": "pr39-mobile-none-special.jpg"
+    },
+    {
+      "route": "/menu",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "network",
+      "expected": "Unable to load menu.",
+      "screenshot": "pr39-mobile-network.jpg",
+      "retry": "keyboard retry recovered"
+    },
+    {
+      "route": "/menu",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "state": "unreadable",
+      "expected": "Unable to load menu.",
+      "screenshot": "pr39-mobile-unreadable.jpg",
+      "retry": "keyboard retry recovered"
+    },
+    {
+      "route": "/",
+      "viewport": {
+        "width": 320,
+        "height": 780
+      },
+      "overflow": {
+        "scroll": 320,
+        "width": 320
+      },
+      "keyboardFocus": {
+        "label": "Home",
+        "tag": "A",
+        "outlineStyle": "auto",
+        "outlineWidth": "1px",
+        "decoration": "underline"
+      },
+      "screenshot": "pr39-narrow-home.jpg"
+    },
+    {
+      "route": "/about",
+      "viewport": {
+        "width": 320,
+        "height": 780
+      },
+      "overflow": {
+        "scroll": 320,
+        "width": 320
+      },
+      "keyboardFocus": {
+        "label": "Home",
+        "tag": "A",
+        "outlineStyle": "auto",
+        "outlineWidth": "1px",
+        "decoration": "underline"
+      },
+      "screenshot": "pr39-narrow-about.jpg"
+    },
+    {
+      "route": "/contact",
+      "viewport": {
+        "width": 320,
+        "height": 780
+      },
+      "overflow": {
+        "scroll": 320,
+        "width": 320
+      },
+      "keyboardFocus": {
+        "label": "Home",
+        "tag": "A",
+        "outlineStyle": "auto",
+        "outlineWidth": "1px",
+        "decoration": "underline"
+      },
+      "screenshot": "pr39-narrow-contact.jpg"
+    },
+    {
+      "route": "/menu",
+      "viewport": {
+        "width": 320,
+        "height": 780
+      },
+      "overflow": {
+        "scroll": 320,
+        "width": 320
+      },
+      "keyboardFocus": {
+        "label": "Home",
+        "tag": "A",
+        "outlineStyle": "auto",
+        "outlineWidth": "1px",
+        "decoration": "underline"
+      },
+      "screenshot": "pr39-narrow-menu.jpg"
+    },
+    {
+      "route": "/specials",
+      "viewport": {
+        "width": 320,
+        "height": 780
+      },
+      "overflow": {
+        "scroll": 320,
+        "width": 320
+      },
+      "keyboardFocus": {
+        "label": "Home",
+        "tag": "A",
+        "outlineStyle": "auto",
+        "outlineWidth": "1px",
+        "decoration": "underline"
+      },
+      "screenshot": "pr39-narrow-specials.jpg"
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 780
+      },
+      "keyboardNavigation": "Home → About → Menu → Specials → Contact passed"
+    },
+    {
+      "route": "/specials",
+      "viewport": {
+        "width": 320,
+        "height": 780
+      },
+      "state": "none-special",
+      "expected": "No specials are available right now.",
+      "screenshot": "pr39-narrow-none-special.jpg"
+    },
+    {
+      "route": "/menu",
+      "viewport": {
+        "width": 320,
+        "height": 780
+      },
+      "state": "network",
+      "expected": "Unable to load menu.",
+      "screenshot": "pr39-narrow-network.jpg",
+      "retry": "keyboard retry recovered"
+    },
+    {
+      "route": "/menu",
+      "viewport": {
+        "width": 320,
+        "height": 780
+      },
+      "state": "unreadable",
+      "expected": "Unable to load menu.",
+      "screenshot": "pr39-narrow-unreadable.jpg",
+      "retry": "keyboard retry recovered"
+    }
+  ],
+  "implementationCommit": "533d7e1d28181ab12ab9c038428985a989078fc4"
+}

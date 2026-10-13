@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --cream: #fbf7f0;
+  --espresso: #2f241f;
+  --accent: #944b35;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--espresso);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+body > main {
+  flex: 1;
+  width: 100%;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #944b35;
+  outline-offset: 5px;
+}
+
+main:not([class]) {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Setup Ts Deep Modules"
+  short_description: "Explicitly invoke the Setup Ts Deep Modules workflow"
+  default_prompt: "Use $setup-ts-deep-modules to guide this task."
+policy:
+  allow_implicit_invocation: false
