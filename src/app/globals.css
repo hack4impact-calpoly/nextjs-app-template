@@ -1,0 +1,215 @@
+/* ---------- Shared variables ---------- */
+:root {
+  --color-bg: beige;
+  --color-surface: #fdfdfd;
+  --color-text: black;
+  --color-border: rgb(232, 232, 232);
+  --color-error: #c0392b;
+  --color-success: #1e8449;
+  --font-main: Arial, Helvetica, sans-serif;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+  --radius: 6px;
+}
+
+/* ---------- Base element styles ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-main);
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 0 var(--space-md);
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: var(--space-lg) 0 var(--space-sm);
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin: var(--space-sm) 0;
+}
+
+a {
+  color: var(--color-text);
+}
+
+img {
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+input,
+textarea,
+select {
+  padding: var(--space-sm);
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  background-color: var(--color-surface);
+}
+
+button,
+input[type="submit"] {
+  padding: var(--space-sm) var(--space-md);
+  border: 1px solid var(--color-text);
+  border-radius: var(--radius);
+  background-color: var(--color-surface);
+  cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+  background-color: var(--color-border);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* ---------- Page layout ---------- */
+.page {
+  padding: var(--space-lg) var(--space-xl) var(--space-xl);
+}
+
+.two-column {
+  display: flex;
+  gap: var(--space-xl);
+}
+
+.two-column > :first-child {
+  flex: 2;
+}
+
+.two-column > :last-child {
+  flex: 1;
+}
+
+.two-column > * > :first-child {
+  margin-top: 0;
+}
+
+/* ---------- Lists of menu items ---------- */
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-list > li {
+  margin-bottom: var(--space-md);
+}
+
+.price {
+  margin-left: var(--space-md);
+}
+
+/* ---------- Forms ---------- */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  max-width: 480px;
+}
+
+.form > button,
+.form > input[type="submit"] {
+  align-self: flex-start;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-field.inline {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+[aria-invalid="true"] {
+  border-color: var(--color-error);
+}
+
+.field-error,
+.status-error {
+  color: var(--color-error);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+.status-success {
+  color: var(--color-success);
+  margin: 0;
+}
+
+/* ---------- Home page ---------- */
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.menu-item {
+  text-align: center;
+}
+
+.menu-image {
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+/* ---------- About page ---------- */
+.about-img {
+  display: block;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: var(--space-lg);
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ---------- Contact page ---------- */
+.contact-info dd {
+  margin: 0;
+}
+
+.footer {
+  margin-top: var(--space-xl);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}

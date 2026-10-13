@@ -1,6 +1,4 @@
-# name of non-profit
-
-{One sentence description of the project}
+# Team 15
 
 ## Table of Contents
 
@@ -11,22 +9,19 @@
 
 ## Overview
 
-### Purpose
+We are building a website for a restaurant!
 
-{Short paragraph description of the non-profit mission and the purpose of this project. Who will this project help, why is it necessary. Impact of the project.}
+## Purpose
+...
 
 ### Team
 
-The {non-profit name} team consists of {#} Cal Poly students. Over the course of about 9 months, we worked as a team to deploy this web application. The team members are listed below:
-
-- [First Last](https://www.linkedin.com/) - Project Manager
-- [First Last](https://www.linkedin.com/) - Designer
-- [First Last](https://www.linkedin.com/) - Tech Lead
-- [First Last](https://www.linkedin.com/) - Tech Lead
-- [First Last](https://www.linkedin.com/) - Software Developer
+- Ashley Navos - Tech Lead
+- Edison Tan - Software Developer
+- Myanh Nguyen - Software Developer
+- Raymond Bautista - Software Developer
+- Tyler Charvat - Software Developer
+- Corey Moore - Software Developer
 
 ## Getting Started And Contributing
-
-Visit [getting-started.md](docs/getting-started.md) on info for how to set up this repo.
-
 Visit [contributing.md](docs/contributing.md) on info for how to contribute to this repo.

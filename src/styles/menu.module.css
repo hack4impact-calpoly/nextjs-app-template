@@ -1,0 +1,99 @@
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px 80px;
+}
+
+.pageTitle {
+  font-size: 2.5rem;
+  margin: 0 0 40px;
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  margin: 0 0 20px;
+}
+
+.menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menuCard {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.menuCard:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.menuImage {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+}
+
+.cardContent {
+  padding: 18px;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.itemName {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.description {
+  color: #555;
+  line-height: 1.5;
+  margin: 10px 0 0;
+}
+
+.unavailable {
+  margin: 12px 0 0;
+  font-weight: bold;
+  color: #777;
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 24px 16px 60px;
+  }
+
+  .pageTitle {
+    font-size: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.6rem;
+  }
+}
