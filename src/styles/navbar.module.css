@@ -1,0 +1,28 @@
+.nav {
+  background: #f6f1eb;
+  border-bottom: 1px solid #d9cfc3;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0.75rem 1.25rem;
+}
+
+.link {
+  color: #2c2118;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus-visible {
+  text-decoration: underline;
+}
+
+.active {
+  color: #bf218f;
+}

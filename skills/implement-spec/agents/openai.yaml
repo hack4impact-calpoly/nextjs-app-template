@@ -1,0 +1,6 @@
+interface:
+  display_name: "Implement Spec"
+  short_description: "Explicitly invoke the Implement Spec workflow"
+  default_prompt: "Use $implement-spec to guide this task."
+policy:
+  allow_implicit_invocation: false

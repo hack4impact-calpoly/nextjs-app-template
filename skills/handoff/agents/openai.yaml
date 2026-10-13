@@ -1,0 +1,6 @@
+interface:
+  display_name: "Handoff"
+  short_description: "Explicitly invoke the Handoff workflow"
+  default_prompt: "Use $handoff to guide this task."
+policy:
+  allow_implicit_invocation: false

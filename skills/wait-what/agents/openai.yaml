@@ -1,0 +1,6 @@
+interface:
+  display_name: "Wait What"
+  short_description: "Explicitly invoke the Wait What workflow"
+  default_prompt: "Use $wait-what to guide this task."
+policy:
+  allow_implicit_invocation: false

@@ -1,0 +1,6 @@
+interface:
+  display_name: "Grill Me"
+  short_description: "Explicitly invoke the Grill Me workflow"
+  default_prompt: "Use $grill-me to guide this task."
+policy:
+  allow_implicit_invocation: false

@@ -7,9 +7,11 @@
 
 # testing
 /coverage
+/.vitest/
 
 # next.js
 /.next/
+/.next-http-test/
 /out/
 
 # production
@@ -25,7 +27,9 @@ yarn-debug.log*
 yarn-error.log*
 
 # local env files
-.env*.local
+.env
+.env.*
+!.env.local.example
 
 # vercel
 .vercel

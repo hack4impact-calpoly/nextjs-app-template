@@ -1,0 +1,6 @@
+interface:
+  display_name: "Writing Shape"
+  short_description: "Explicitly invoke the Writing Shape workflow"
+  default_prompt: "Use $writing-shape to guide this task."
+policy:
+  allow_implicit_invocation: false

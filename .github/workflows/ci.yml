@@ -20,7 +20,7 @@ jobs:
     # Use matrix strategy to test multiple Node.js versions
     strategy:
       matrix:
-        node-version: [18.x, 20.x, 22.x]
+        node-version: [24.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     # Steps represent a sequence of tasks that will be executed as part of the job
@@ -34,15 +34,20 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
-      - name: Dry-run build
-        run: npm run build
-        env:
-          # These env variables must be set in the repository's secrets
-          # - Settings -> Secrets and variables -> New repository secret
-          MONGO_URI: ${{ secrets.MONGO_URI }}
-          # Add additional environment variables here
-      
+      - name: Lint
+        run: npm run lint
+
+      - name: Check types
+        run: npm run typecheck
+
       - name: Run tests
         run: npm test
+
+      - name: Build without Atlas credentials
+        run: npm run build
+        env:
+          MONGO_URI: ""
+          MANAGEMENT_USERNAME: ""
+          MANAGEMENT_PASSWORD: ""

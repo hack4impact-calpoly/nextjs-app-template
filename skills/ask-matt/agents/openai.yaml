@@ -1,0 +1,6 @@
+interface:
+  display_name: "Ask Matt"
+  short_description: "Explicitly invoke the Ask Matt workflow"
+  default_prompt: "Use $ask-matt to guide this task."
+policy:
+  allow_implicit_invocation: false

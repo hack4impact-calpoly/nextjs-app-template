@@ -1,0 +1,10 @@
+[
+  {
+    "ID": "seed-id",
+    "name": "Seed Tea",
+    "description": "Independent seed",
+    "price": 2.5,
+    "category": "Tea",
+    "specialOffer": true
+  }
+]
