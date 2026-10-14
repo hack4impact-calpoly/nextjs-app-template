@@ -1,0 +1,41 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.25rem 1.5rem;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.name {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #9c0707;
+}
+
+.description {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #666666;
+}
+
+.price {
+  margin: 0;
+  margin-top: auto;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #b8860b;
+}
