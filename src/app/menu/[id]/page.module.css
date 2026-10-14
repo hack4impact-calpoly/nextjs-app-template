@@ -1,0 +1,43 @@
+.backLink {
+  align-self: flex-start;
+  margin-bottom: var(--spacing-large);
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--spacing-large);
+  align-items: start;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  background: color-mix(in srgb, var(--cg-primary) 5%, var(--cg-background));
+  box-shadow: 0 3px 8px color-mix(in srgb, var(--cg-primary) 8%, transparent);
+}
+
+.details {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.details h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.details h2 {
+  margin: var(--spacing-large) 0 var(--spacing-small);
+  font-size: 1.5rem;
+}
+
+@media (max-width: 760px) {
+  .layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

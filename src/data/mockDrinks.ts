@@ -1,0 +1,89 @@
+import { Drink } from "@/types/drink";
+
+const mockDrinks: Drink[] = [
+  {
+    _id: "1",
+    name: "Coffee",
+    description: "This is a placeholder for Coffee",
+    category: "Coffee",
+    sizes: [
+      { size: "Small", price: 3.0 },
+      { size: "Medium", price: 3.5 },
+      { size: "Large", price: 4.0 },
+    ],
+    milkOptions: ["Whole", "Oat", "Almond"],
+    imageUrl: "/drinks/coffee.jpg",
+    isBestseller: false,
+  },
+  {
+    _id: "2",
+    name: "Matcha",
+    description: "This is a placeholder for Matcha",
+    category: "Tea",
+    sizes: [
+      { size: "Small", price: 5.0 },
+      { size: "Medium", price: 5.5 },
+      { size: "Large", price: 6.0 },
+    ],
+    milkOptions: ["Whole", "Oat", "Almond"],
+    imageUrl: "/drinks/matcha.jpg",
+    isBestseller: false,
+  },
+  {
+    _id: "3",
+    name: "Mocha",
+    description: "This is a placeholder for Mocha",
+    category: "Coffee",
+    sizes: [
+      { size: "Small", price: 4.75 },
+      { size: "Medium", price: 5.25 },
+      { size: "Large", price: 5.75 },
+    ],
+    milkOptions: ["Whole", "Oat", "Almond"],
+    imageUrl: "/drinks/mocha.jpg",
+    isBestseller: true,
+  },
+  {
+    _id: "4",
+    name: "Americano",
+    description: "This is a placeholder for Americano",
+    category: "Coffee",
+    sizes: [
+      { size: "Small", price: 3.5 },
+      { size: "Medium", price: 4.0 },
+      { size: "Large", price: 4.5 },
+    ],
+    milkOptions: [],
+    imageUrl: "/drinks/americano.jpg",
+    isBestseller: false,
+  },
+  {
+    _id: "5",
+    name: "Cold Brew",
+    description: "This is a placeholder for Cold Brew",
+    category: "Coffee",
+    sizes: [
+      { size: "Medium", price: 4.0 },
+      { size: "Large", price: 4.5 },
+    ],
+    milkOptions: ["Whole", "Oat", "Almond"],
+    imageUrl: "/drinks/cold-brew.jpg",
+    isBestseller: false,
+  },
+  {
+    _id: "6",
+    name: "Iced Tea",
+    description: "This is a placeholder for Iced Tea",
+    category: "Tea",
+    sizes: [
+      { size: "Small", price: 3.0 },
+      { size: "Medium", price: 3.5 },
+      { size: "Large", price: 4.0 },
+    ],
+    milkOptions: [],
+    imageUrl: "/drinks/iced-tea.jpg",
+    isBestseller: false,
+  },
+];
+
+export default mockDrinks;
